@@ -9,8 +9,22 @@
             height: 100%;
         }
     </style>
+    <title>Exercise Application</title>
+    <!-- Bootstrap (UI5 로드 역할): 설정용 script -->
+    <script
+    id="sap-ui-bootstrap"     
+    src="resources/sap-ui-core.js" 
+    data-sap-ui-theme="sap_fiori_3"
+    data-sap-ui-libs="sap.m"
+    data-sap-ui-compatVersion="edge"
+    >
+    </script>
+    <!-- UI 코드 실행 -->
+    <script>
+        var oText = new sap.m.Text({text: "Hello World"});
+        oText.placeAt("content");
+    </script>
 </head>
-<body>
-    
+<body class="sapUiBody" id="content">
 </body>
 </html>
